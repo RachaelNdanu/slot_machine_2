@@ -1,7 +1,7 @@
 import random
 
 MAX_LINES = 3
-MAX_BET = 100
+MAX_BET = 50
 MIN_BET = 1
 
 ROWS = 3
@@ -79,7 +79,7 @@ def deposit():
             else:
                 print("Amount should be greater than 0.")
         else:
-            print("Please enter a number.")
+            print("please enter a number!")
 
     return amount
 
@@ -110,7 +110,7 @@ def get_bet():
             else:
                 print(f"Amount must be between ${MIN_BET} - ${MAX_BET}.")
         else:
-            print("Please enter a number.")
+            print("Please enter a number!")
 
     return amount
 
@@ -123,7 +123,7 @@ def spin(balance):
 
         if total_bet > balance:
             print(
-                f"You do not have enough to bet that amount, your current balance is: ${balance}")
+                f"You have insufficient balance to bet that amount, your current balance is: ${balance}")
         else:
             break
 
