@@ -77,7 +77,7 @@ def deposit():
             if amount > 0:
                 break
             else:
-                print("Amount should be greater than 0.")
+                print("Amount must be greater than 0.")
         else:
             print("Please enter a number.")
 
@@ -108,7 +108,7 @@ def get_bet():
             if MIN_BET <= amount <= MAX_BET:
                 break
             else:
-                print(f"Amount must be between ${MIN_BET} - ${MAX_BET}.")
+                print(f"Amount should be between ${MIN_BET} - ${MAX_BET}.")
         else:
             print("Please enter a number.")
 
